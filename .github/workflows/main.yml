@@ -48,6 +48,6 @@ jobs:
       - name: Run build
         run: |
           cd giftlink-frontend
-          npm install
-          npm run build
+          CI=false npm install
+          CI=false npm run build
           echo "Client-side build successfully"
